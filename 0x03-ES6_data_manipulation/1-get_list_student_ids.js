@@ -1,5 +1,5 @@
 function getListStudentIds(array) {
-  if (typeof (array) !== 'object') return [];
+  if (!Array.isArray(array)) return [];
   return array.map((item) => item.id);
 }
 
